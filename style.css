@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+	font-family:sans-serif;
+}
 :root{
 	--c0: #df5a5c;
 	--c1: #d1d6c3;
@@ -7,6 +12,16 @@
 	--c5: #7d5a39;
 	--c6: #de60b9;
 	--c7: #bed01eeb;
+	--c8: #f4425c;
+	--sym0:'@@@@@@@@@@';
+	--sym1:'##########';
+	--sym2:'%%%%%%%%%%';
+	--sym3:'^^^^^^^^^^';
+	--sym4:'&&&&&&&&&&';
+	--sym5:')()()()()(';
+	--sym6:'++++++++++';
+	--sym7:'==========';
+	--space:'    ';
 }
 
 .year{
@@ -18,26 +33,78 @@
 .c0{
 	color:var(--c0);
 }
+.c0::before{
+	content:var(--sym0) var(--space);
+}
+.c0::after{
+	content:var(--space) var(--sym0);
+}
 .c1{
 	color:var(--c1);
+}
+.c1::before{
+	content:var(--sym1) var(--space);
+}
+.c1::after{
+	content:var(--space) var(--sym1);
 }
 .c2{
 	color:var(--c2);
 }
+.c2::before{
+	content:var(--sym2) var(--space);
+}
+.c2::after{
+	content:var(--space) var(--sym2);
+}
 .c3{
 	color:var(--c3);
 }
+/*.c3::before{
+	content:var(--sym3) var(--space);
+}
+.c3::after{
+	content:var(--space) var(--sym3);
+}*/
 .c4{
 	color:var(--c4);
 }
+/*.c4::before{
+	content:var(--sym4) var(--space);
+}
+.c4::after{
+	content:var(--space) var(--sym4);
+}*/
 .c5{
 	color:var(--c5);
 }
+/*.c5::before{
+	content:var(--sym6) var(--space);
+}
+.c5::after{
+	content:var(--space) var(--sym6);
+}*/
 .c6{
 	color:var(--c6);
 }
+/*.c6::before{
+	content:var(--sym7) var(--space);
+}
+.c6::after{
+	content:var(--space) var(--sym7);	
+}*/
 .c7{
 	color:var(--c7);
+}
+/*.c7::before{
+	content:var(--sym8) var(--space);
+}
+.c7::after{
+	content:var(--space) var(--sym8);
+}*/
+
+.c8{
+	color:var(--c8);
 }
 
 .sub-title{
@@ -59,7 +126,7 @@
 
 }
 
-.about{
+.about {
 width: 100%;
     align-content: center;
     text-align: center;
@@ -109,6 +176,29 @@ h1{
 
 a{
 	text-align: center;
+	text-decoration: none;
+}
+
+.imgContainer{
+	display:flex;
+	text-align:center;
+	flex-direction: column;
+}
+
+.writingContainer{
+	width: 60%;
+	margin-left:20%;
+}
+
+.writingContainer h1{
+	text-align: center;
+}
+
+.imgContainer{
+	width: 60%;
+	margin-left:20%;
+	text-align:center
+
 }
 
 
@@ -132,9 +222,7 @@ a{
    .columnContainer{
     padding: 7% 10% 0px 10%;
 }
-}
 
-@media screen and (max-width: 785px) {
 .left{
 
 	flex-basis:100%;
@@ -145,4 +233,8 @@ a{
 	flex-basis:100%;
 
 }
+}
+
+@media screen and (max-width: 800px) {
+
 }

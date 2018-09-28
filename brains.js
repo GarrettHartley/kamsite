@@ -28,14 +28,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	'#7d9c65',
 	'#7d5a39',
 	'#de60b9',
-	'#bed01eeb']
+	'#bed01eeb',
+	'#f4425c'
+	]
 
+		var symbols = [
+	'\'@@@@@\'',
+	'\'#####\'',
+	'\'%%%%%\'',
+	'\'^^^^^\'',
+	'\'&&&&&\'',
+	'\')()()()()(\'',
+	'\'+++++\'',
+	'\'=====\'']
 	colors = shuffle(colors)
-
-	var spans = document.querySelectorAll(".cc")
+	symbols = shuffle(symbols)
 
 	for ( var i = 0; i< colors.length; i++){
-		spans[i].style.setProperty("--c"+i, colors[i])
+		document.documentElement.style.setProperty("--c"+i, colors[i])
 	}
-    // Your code to run since DOM is loaded and ready
+	for ( var i = 0; i< symbols.length; i++){
+		 document.documentElement.style.setProperty("--sym"+i, symbols[i])
+	}
 });
