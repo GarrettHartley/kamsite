@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+	<title>About</title>
+	<style type="text/css">
+		p{
+			margin-left: 10%
+		}
+		.first{
+			margin-top:100px
+		}
+		.indent{
+			margin-left: 18%;
+		}
+	</style>
+</head>
+<body>
+	<div class="writingContainer">
+		<p class='cc c0 first' >Slumber Party Giggles [<a href='https://www.urbandictionary.com/define.php?term=SPG' class='cc c1'>on Urban Dictionary</a>]</p>
+
+
+
+		<p class='cc c2 indent' >Betty: I bet he can't even do one pushup
+		<br><span class='cc c3'>Other Guy: spg! (slumber party giggles!)</span>
+		</p>
+
+
+		<p class='cc c4'>This is the website of Kameron Hansen, a writer and artist based in Manhattan.</p>
+
+		<p class='cc c5'>If you would like to purchase art or support the writing of 100 Societies:
+		<br><span class='cc c6'>paypal.me/hansen4332</span></p>
+		<br>
+
+		<p><span class='cc c7'>Contact: hansen4332@gmail.com</span> 
+		<br><span class='cc c8'>Twitter: @kam1am</span>
+		<br><span class='cc c9'>Instagram: @nasdofnaousd</span></p>
+
+
+
+	</div>
+
+	<script>
+
+function shuffle(array) {
+    let counter = array.length;
+
+    // While there are elements in the array
+    while (counter > 0) {
+        // Pick a random index
+        let index = Math.floor(Math.random() * counter);
+
+        // Decrease counter by 1
+        counter--;
+
+        // And swap the last element with it
+        let temp = array[counter];
+        array[counter] = array[index];
+        array[index] = temp;
+    }
+
+    return array;
+}
+
+		document.addEventListener("DOMContentLoaded", function(event) {
+	var colors = [
+	'#df5a5c',
+	'#d1d6c3',
+	'#bb713a',
+	'#879bbe',
+	'#7d9c65',
+	'#7d5a39',
+	'#de60b9',
+	'#bed01eeb',
+	'#f4425c',
+	'green',
+	'blue',
+	'purple',
+	'red',
+	'olive',
+	'maroon',
+	'teal',
+	'aqua',
+	'crimson',
+	'coral'
+
+	]
+
+
+	colors = shuffle(colors)
+
+	elements = document.querySelectorAll('.cc')
+	for ( var i = 0; i< elements.length; i++){
+		elements[i].style = "color:"+colors[i]+";"
+	}
+
+});
+
+
+	</script>
+
+</body>
+</html>

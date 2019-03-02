@@ -18,6 +18,10 @@ function shuffle(array) {
     return array;
 }
 
+function fullscreen(){
+	console.log('in fullscreen');
+this.classList.toggle('fullscreen');
+}
 
 document.addEventListener("DOMContentLoaded", function(event) {
 	var colors = [
@@ -29,18 +33,41 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	'#7d5a39',
 	'#de60b9',
 	'#bed01eeb',
-	'#f4425c'
+	'#f4425c',
+	'green',
+	'blue',
+	'purple',
+	'red',
+	'olive',
+	'maroon',
+	'teal',
+	'aqua',
+	'crimson',
+	'coral'
+
 	]
 
 		var symbols = [
-	'\'@@@@@\'',
+	'\'@@@\'',
 	'\'#####\'',
-	'\'%%%%%\'',
+	'\'%%%\'',
 	'\'^^^^^\'',
 	'\'&&&&&\'',
 	'\')()()()()(\'',
 	'\'+++++\'',
-	'\'=====\'']
+	'\'=====\'',
+	'\'!!!!\'',
+	'\'$$$$\'',
+	'\'****\'',
+	'\'----\'',
+	'\'____\'',
+	'\'+=+=\'',
+	'\'!$!$\'',
+	'\'&^&\'',
+	'\'#%#%\'',
+	'\'^*^\'',
+	'\'(*)(*)\''
+	]
 	colors = shuffle(colors)
 	symbols = shuffle(symbols)
 
